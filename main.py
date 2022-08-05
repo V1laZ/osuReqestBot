@@ -110,7 +110,6 @@ class Bot(commands.Bot):
         print("Bot running")
 
     async def sendPM(self, beatmapLink: str, author, mods):
-
         beatmap_id = beatmapLink.split("/")[-1]
         beatmap_data = get_beatmap_data(beatmap_id=beatmap_id)
         request = f"{author} -  [{beatmapLink} {beatmap_data}] {mods}"
@@ -121,6 +120,7 @@ class Bot(commands.Bot):
     async def event_message(self, message):
         msg = str(message.content).split()
         mods_req = ""
+        beatmapLink = ""
         for word in msg:
             if "osu.ppy.sh/beatmapsets" in word:
                 beatmapLink = word
