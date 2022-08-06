@@ -1,10 +1,12 @@
-import requests
+import json
 import socket
 import threading
-from twitchio.ext import commands
-import json
+from os import path
 
-try:
+import requests
+from twitchio.ext import commands
+
+if path.exists("config.json"):
     with open("config.json", "r") as f:
         data = json.load(f)
         osu_nickname = data["osu_nickname"]
@@ -13,7 +15,7 @@ try:
         client_secret = data["osu_client_secret"]
         twitch_username = data["twitch_username"]
         twitch_token = data["twitch_client_secret"]
-except FileNotFoundError:
+else:
     osu_nickname = input("osu! nickname: ")
     osu_token = input("osu! IRC password: ")
     clientID = input("osu! client ID: ")
