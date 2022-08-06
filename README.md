@@ -14,9 +14,9 @@ When you first run the app it will require some information from you and create 
     - Here you can see your **Client ID** and **Client Secret**  
 - **Twitch username** - your twitch username
 - **Twitch client secret**  
-    - Go to https://twitchtokengenerator.com/ and login  
+    - Go to https://twitchtokengenerator.com and login  
     - I am here to get a... **Bot Chat Token**  
-    - Authorite the app  
+    - Authorize the app  
     - Use **ACCESS TOKEN**  
 
 ## For users
