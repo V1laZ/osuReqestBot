@@ -18,6 +18,25 @@ When you first run the app it will require some information from you and create 
     - I am here to get a... **Bot Chat Token**  
     - Authorize the app  
     - Use **ACCESS TOKEN**  
+    
+## For users
+Download .exe from [releases](https://github.com/V1laZ/osuReqestBot/releases/tag/v1.0)
+
+Might get flagged as virus by some antiviruses. If it does happen either disable your antivirus or download the source code and run it with python directly.  
+
+How to do it:
+- Download and install [Python](https://www.python.org/downloads/)
+- Open **cmd** and type
+```
+pip install twitchio requests
+```
+- Download [source code](https://github.com/V1laZ/osuReqestBot/releases/tag/v1.0)
+- Unzip it 
+- Open **cmd** and `cd` to source code directory
+- Type in **cmd**
+```
+python main.py
+```
 
 ## For developers
 Open project folder in VS Code and type in terminal
