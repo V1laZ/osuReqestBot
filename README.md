@@ -19,9 +19,6 @@ When you first run the app it will require some information from you and create 
     - Authorize the app  
     - Use **ACCESS TOKEN**  
 
-## For users
-Download .exe from [releases](https://github.com/V1laZ/osuReqestBot/releases/tag/v1.0)
-
 ## For developers
 Open project folder in VS Code and type in terminal
 ```
